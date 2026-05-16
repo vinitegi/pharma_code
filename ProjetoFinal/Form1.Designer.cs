@@ -34,19 +34,21 @@
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
             this.dgvCategorias = new System.Windows.Forms.DataGridView();
+            this.lblCategoria = new System.Windows.Forms.Label();
+            this.directoryEntry1 = new System.DirectoryServices.DirectoryEntry();
             ((System.ComponentModel.ISupportInitialize)(this.dgvCategorias)).BeginInit();
             this.SuspendLayout();
             // 
             // txtId
             // 
-            this.txtId.Location = new System.Drawing.Point(12, 43);
+            this.txtId.Location = new System.Drawing.Point(13, 53);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(69, 22);
             this.txtId.TabIndex = 0;
             // 
             // txtNome
             // 
-            this.txtNome.Location = new System.Drawing.Point(101, 43);
+            this.txtNome.Location = new System.Drawing.Point(102, 53);
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(243, 22);
             this.txtNome.TabIndex = 1;
@@ -54,20 +56,19 @@
             // 
             // btnSalvar
             // 
-            this.btnSalvar.Location = new System.Drawing.Point(12, 86);
+            this.btnSalvar.Location = new System.Drawing.Point(13, 96);
             this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(75, 23);
+            this.btnSalvar.Size = new System.Drawing.Size(75, 24);
             this.btnSalvar.TabIndex = 2;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
-
             // 
             // btnEditar
             // 
-            this.btnEditar.Location = new System.Drawing.Point(114, 85);
+            this.btnEditar.Location = new System.Drawing.Point(115, 95);
             this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(75, 23);
+            this.btnEditar.Size = new System.Drawing.Size(75, 24);
             this.btnEditar.TabIndex = 3;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = true;
@@ -75,9 +76,9 @@
             // 
             // btnExcluir
             // 
-            this.btnExcluir.Location = new System.Drawing.Point(217, 84);
+            this.btnExcluir.Location = new System.Drawing.Point(218, 94);
             this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(75, 23);
+            this.btnExcluir.Size = new System.Drawing.Size(75, 24);
             this.btnExcluir.TabIndex = 4;
             this.btnExcluir.Text = "Excluir";
             this.btnExcluir.UseVisualStyleBackColor = true;
@@ -93,11 +94,22 @@
             this.dgvCategorias.Size = new System.Drawing.Size(921, 378);
             this.dgvCategorias.TabIndex = 5;
             // 
+            // lblCategoria
+            // 
+            this.lblCategoria.AutoSize = true;
+            this.lblCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.lblCategoria.Location = new System.Drawing.Point(12, 9);
+            this.lblCategoria.Name = "lblCategoria";
+            this.lblCategoria.Size = new System.Drawing.Size(295, 31);
+            this.lblCategoria.TabIndex = 6;
+            this.lblCategoria.Text = "Cadastro de categorias";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1424, 609);
+            this.Controls.Add(this.lblCategoria);
             this.Controls.Add(this.dgvCategorias);
             this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.btnEditar);
@@ -121,6 +133,8 @@
         private System.Windows.Forms.Button btnEditar;
         private System.Windows.Forms.Button btnExcluir;
         private System.Windows.Forms.DataGridView dgvCategorias;
+        private System.Windows.Forms.Label lblCategoria;
+        private System.DirectoryServices.DirectoryEntry directoryEntry1;
     }
 }
 
