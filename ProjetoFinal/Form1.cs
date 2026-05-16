@@ -1,6 +1,7 @@
 ﻿using ProjetoFinal.Entities;
 using ProjetoFinal.Repositories;
 using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace ProjetoFinal
@@ -13,6 +14,7 @@ namespace ProjetoFinal
         {
             InitializeComponent();
         }
+
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
@@ -35,6 +37,7 @@ namespace ProjetoFinal
         private void Form1_Load(object sender, EventArgs e)
         {
             AtualizarGrid();
+            EstilizarGrid();
         }
 
         private void btnExcluir_Click(object sender, EventArgs e)
@@ -65,6 +68,32 @@ namespace ProjetoFinal
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void EstilizarGrid()
+        {
+            dgvCategorias.BorderStyle = BorderStyle.None;
+            dgvCategorias.BackgroundColor = Color.White;
+            dgvCategorias.EnableHeadersVisualStyles = false;
+
+            dgvCategorias.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(33, 150, 243);
+            dgvCategorias.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            dgvCategorias.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 10, FontStyle.Bold);
+            dgvCategorias.ColumnHeadersHeight = 35;
+
+            dgvCategorias.DefaultCellStyle.Font = new Font("Segoe UI", 10);
+            dgvCategorias.DefaultCellStyle.BackColor = Color.White;
+            dgvCategorias.DefaultCellStyle.ForeColor = Color.Black;
+            dgvCategorias.DefaultCellStyle.SelectionBackColor = Color.FromArgb(187, 222, 251);
+            dgvCategorias.DefaultCellStyle.SelectionForeColor = Color.Black;
+
+            dgvCategorias.AlternatingRowsDefaultCellStyle.BackColor = Color.FromArgb(245, 245, 245);
+
+            dgvCategorias.RowTemplate.Height = 32;
+            dgvCategorias.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvCategorias.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvCategorias.MultiSelect = false;
+            dgvCategorias.ReadOnly = true;
         }
     }
 }

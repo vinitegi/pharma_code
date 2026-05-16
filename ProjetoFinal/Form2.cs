@@ -23,5 +23,12 @@ namespace ProjetoFinal
 
             formCategorias.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form3 formRemedio = new Form3();
+
+            formRemedio.Show();
+        }
     }
 }

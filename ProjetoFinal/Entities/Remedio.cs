@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ProjetoFinal.Entities
 {
@@ -20,7 +17,7 @@ namespace ProjetoFinal.Entities
 
         public int CategoriaId { get; set; }
 
-        public int FornecedorId { get; set; }
+        public string CategoriaNome { get; set; }
 
         public List<Movimentacao> Movimentacoes { get; set; }
     }

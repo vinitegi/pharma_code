@@ -91,7 +91,7 @@
             this.dgvCategorias.Name = "dgvCategorias";
             this.dgvCategorias.RowHeadersWidth = 51;
             this.dgvCategorias.RowTemplate.Height = 24;
-            this.dgvCategorias.Size = new System.Drawing.Size(921, 378);
+            this.dgvCategorias.Size = new System.Drawing.Size(350, 378);
             this.dgvCategorias.TabIndex = 5;
             // 
             // lblCategoria
@@ -108,7 +108,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1424, 609);
+            this.ClientSize = new System.Drawing.Size(375, 559);
             this.Controls.Add(this.lblCategoria);
             this.Controls.Add(this.dgvCategorias);
             this.Controls.Add(this.btnExcluir);
