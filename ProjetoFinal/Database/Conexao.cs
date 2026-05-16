@@ -1,15 +1,19 @@
-﻿using System.Data.SqlClient;
+﻿using Npgsql;
 
 namespace ProjetoFinal.Database
 {
     public class Conexao
     {
-        private string connectionString =
-            "Server=localhost;Database=FarmaciaDB;Trusted_Connection=True;"; //muda isso aq vitao
+        private readonly string connectionString =
+            "Host=localhost;" +
+            "Port=5432;" +
+            "Database=FarmaciaDB;" +
+            "Username=postgres;" +
+            "Password=Vg@261105;";
 
-        public SqlConnection GetConnection()
+        public NpgsqlConnection GetConnection()
         {
-            return new SqlConnection(connectionString);
+            return new NpgsqlConnection(connectionString);
         }
     }
 }
