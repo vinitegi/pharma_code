@@ -1,10 +1,5 @@
 # 💊 Sistema de Estoque de Farmácia
 
-<https://img.shields.io/badge/status-concluído-green>  
-<https://img.shields.io/badge/projeto-acadêmico-blue>  
-<https://img.shields.io/badge/C%23-Windows%20Forms-512BD4>
-
-***
 
 ## 📄 Descrição
 
